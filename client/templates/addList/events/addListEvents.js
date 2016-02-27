@@ -10,10 +10,9 @@ Template.add_list_form.events({
     var list_name;
     list_name = event.target.list_name.value;
     $(this).find("input[type=text]").val("");
-  // var  id = Board.insert({
-  //     board_name: board_name
-  //   });
-  //  console.log(boardid);
+  List.insert({
+      list_name: list_name
+    });
     $("#add_list_form").modal('hide');
     return false;
   }
