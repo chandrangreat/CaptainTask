@@ -1,0 +1,19 @@
+<head>
+  <title>Captain Task</title>
+</head>
+
+<body class="container">
+{{> add_board_form}}
+{{> add_list_form}}
+
+  <h1>Captain Task</h1>
+  <div>
+    {{> add_board_button}}
+  </div>
+  {{> board}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>

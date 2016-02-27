@@ -1,0 +1,10 @@
+<template name="board">
+{{#each board}}
+  <div class="rows board-container" id="{{_id}}">
+    <div><h3>{{board_name}}</h3></div>
+    {{> add_list_button }}
+    <!-- {{>list}} -->
+  </div>
+{{/each}}
+
+</template>
