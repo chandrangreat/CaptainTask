@@ -2,7 +2,8 @@
 .board-container {
     background-color: #EEE;
     border-radius: 5px;
-    padding: 6px 23px;
+    /*padding: 6px 23px;*/
+    padding:6px 23px 30px 23px;
     margin: 18px 0px;
 }
 .list-container {
@@ -48,4 +49,10 @@
   width: 48%;
 display: inline-block;
 text-align: right;
+}
+
+.card-container {
+    border: 2px solid #EEE;
+    margin: 19px 0px;
+    height: 115px;
 }
