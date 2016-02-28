@@ -1,5 +1,5 @@
 <template name="add_list_button">
-  <button type="button" class="btn btn-default btn-sm js-show-list-form">Add New List</button>
+  <button type="button" data-boardid="{{boardid}}" class="btn btn-default btn-sm js-show-list-form">Add New List</button>
 </template>
 
 <template name="add_list_form">
@@ -11,8 +11,8 @@
       </div>
       <div class="modal-body">
         <form class="js-add-list">
-          <input type="text" name="list_name"/>
-          <button class="btn btn-success">Create List</button>
+          <input id="form-list-name" type="text" name="list_name"/>
+          <button  class="btn btn-success">Create List</button>
         </form>
       </div>
       <div class="modal-footer">
