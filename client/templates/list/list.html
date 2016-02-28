@@ -4,6 +4,7 @@
   {{#each list boardId}}
     <div class="col-md-4" id="{{_id}}">
       <div class="list-container">
+
         <div class="list-head">
           <div class="list-title">
             <h5>{{list_name}}</h5>
@@ -12,6 +13,11 @@
             <button type="button" class="btn btn-xs btn-warning js-list-delete-button">Delete</button>
           </div>
         </div>
+        <div class="list_body">
+          {{> add_card_button listid=this._id}}
+           {{> card listId=this._id }}
+        </div>
+
     </div>
     </div>
   {{/each}}

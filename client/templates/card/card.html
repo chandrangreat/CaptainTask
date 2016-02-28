@@ -1,0 +1,24 @@
+<template name="card">
+<div class="container-fluid">
+
+  {{#each card listId}}
+  <div class="row" id="{{_id}}">
+    <div class="col-md-12">
+      <div class="card-container">
+
+        <div class="card-head">
+          <div class="card-title">
+            <h5>{{card_name}}</h5>
+          </div>
+          <!-- <div class="card-delete-container">
+            <button type="button" class="btn btn-xs btn-warning js-card-delete-button">Delete</button>
+          </div> -->
+        </div>
+
+    </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+
+</template>

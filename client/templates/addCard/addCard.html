@@ -1,0 +1,26 @@
+<template name="add_card_button">
+  <div class="addCardButtonContainer">
+    <button type="button" data-listid="{{listid}}" class="btn btn-default btn-xs js-show-card-form">Add New Card</button>
+  </div>
+</template>
+
+<template name="add_card_form">
+  <div class="modal fade" id="add_card_form" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">Enter Title of card</div>
+      </div>
+      <div class="modal-body">
+        <form class="js-add-card">
+          <input id="form-card-name" data-listid="" type="text" name="card_name"/>
+          <button  class="btn btn-success">Create Card</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+</template>
