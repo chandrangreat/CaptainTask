@@ -1,7 +1,9 @@
 <template name="list">
-  {{#each list}}
+
+  {{#each list boardId}}
     <div class="rows list-container" id="{{_id}}">
-      <div><h5>{{list_name}} {{boardid}} {{_id}}</h5></div>
+      <div><h5>{{list_name}}</h5></div>
     </div>
   {{/each}}
+
 </template>

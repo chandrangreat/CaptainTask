@@ -1,1 +1,7 @@
 
+.board-container {
+    background-color: #EEE;
+    border-radius: 5px;
+    padding: 6px 23px;
+    margin: 18px 0px;
+}
