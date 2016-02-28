@@ -1,9 +1,19 @@
 <template name="list">
-
+<div class="container-fluid">
+<div class="row">
   {{#each list boardId}}
-    <div class="rows list-container" id="{{_id}}">
-      <div><h5>{{list_name}}</h5></div>
+    <div class="col-md-4" id="{{_id}}">
+      <div class="list-container">
+        <div class="list-title">
+          <h5>{{list_name}}</h5>
+        </div>
+        <div class="list-delete-container">
+          <button type="button" class="btn btn-xs btn-warning js-list-delete-button">Delete</button>
+        </div>
+    </div>
     </div>
   {{/each}}
+</div>
+</div>
 
 </template>

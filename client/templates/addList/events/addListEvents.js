@@ -14,8 +14,6 @@ Template.add_list_form.events({
     var boardId="";
         var boardId = event.target.list_name.getAttribute('data-boardid'); //$(event.currentTarget.list_name).data('boardid');
     list_name = event.target.list_name.value;
-
-    console.log(boardId);
     $(this).find("input[type=text]").val("");
   List.insert({
       list_name: list_name,

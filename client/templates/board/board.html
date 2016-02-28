@@ -1,7 +1,12 @@
 <template name="board">
 {{#each board}}
   <div class="rows board-container" id="{{_id}}">
-    <div><h3>{{board_name}}</h3></div>
+    <div class="board-title">
+      <h3>{{board_name}}</h3>
+    </div>
+    <div class="board-delete-container">
+      <button type="button" class="btn btn-md btn-warning js-board-delete-button">Delete Board</button>
+    </div>
     {{> add_list_button boardid=this._id }}
      {{> list boardId=this._id }}
   </div>
