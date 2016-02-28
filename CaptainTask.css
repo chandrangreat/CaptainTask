@@ -56,3 +56,8 @@ text-align: right;
     margin: 19px 0px;
     height: 115px;
 }
+
+.addCardButtonContainer {
+    margin: 15px 15px;
+    text-align: right;
+}
