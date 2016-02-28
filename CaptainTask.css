@@ -34,6 +34,11 @@
     text-align: right;
 }
 
+.list-head {
+    width: 100%;
+    display: inline-block;
+}
+
 .board-title {
     width: 48%;
     display: inline-block;
