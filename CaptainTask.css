@@ -18,6 +18,11 @@
     margin-bottom: 10px;
 }
 
+.addListButtonContainer button:hover {
+    border-color: yellow;
+    background-color: white;
+}
+
 .list-title {
     width: 50%;
     display: inline-block;
