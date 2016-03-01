@@ -1,8 +1,8 @@
 <template name="card">
-<div class="container-fluid">
+<div class="container-fluid sortable">
 
   {{#each card listId}}
-  <div class="row card-container" id="{{_id}}">
+  <div class="row card-container draggable" id="{{_id}}">
     <div class="col-md-12">
       <!-- <div class="card-container"> -->
 
@@ -10,9 +10,9 @@
           <div class="card-title">
             <h5>{{card_name}}</h5>
           </div>
-          <!-- <div class="card-delete-container">
-            <button type="button" class="btn btn-xs btn-warning js-card-delete-button">Delete</button>
-          </div> -->
+          <div class="card-delete-container">
+            <span class="glyphicon glyphicon-remove js-card-delete-button"></span>
+          </div>
         </div>
 
     <!-- </div> -->
