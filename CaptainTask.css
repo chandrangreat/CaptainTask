@@ -46,18 +46,45 @@
 }
 
 .board-delete-container{
-  width: 48%;
+  width: 50.7%;
 display: inline-block;
 text-align: right;
+}
+
+span.glyphicon.glyphicon-remove.js-card-delete-button {
+    opacity: 0.4;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+span.glyphicon.glyphicon-remove.js-card-delete-button:hover {
+    color: red;
 }
 
 .card-container {
     border: 2px solid #EEE;
     margin: 19px 0px;
     height: 115px;
+    background-color: white;
 }
 
 .addCardButtonContainer {
     margin: 15px 15px;
+    text-align: right;
+}
+
+.card-head {
+    width: 100%;
+    display: inline-block;
+}
+
+.card-title {
+    display: inline-block;
+    width: 50%;
+}
+
+.card-delete-container {
+    display: inline-block;
+    width: 48%;
     text-align: right;
 }
