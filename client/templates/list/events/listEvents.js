@@ -1,5 +1,8 @@
 Template.list.events({
   'click .js-list-delete-button': function(event){
-    List.remove(this._id);
+    var listid = this._id;
+    $("#"+listid).hide('slow', function(){
+        List.remove({"_id":listid});
+    });
   }
 });

@@ -19,6 +19,7 @@ Template.card.helpers({
      $( ".draggable" ).draggable({
        connectToSortable: ".sortable",
        revert: "true",
+       //containment:"list-container"
       // cursor: "all-scroll"
      });
   });
