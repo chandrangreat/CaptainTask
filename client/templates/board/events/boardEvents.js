@@ -3,7 +3,7 @@ Template.board.events({
     var boardid = this._id;
 
     $("#"+boardid).hide('slow', function(){
-        Board.remove({"_id":boardid});
+      Meteor.call("deleteBoard",boardid);
     });
   }
 });

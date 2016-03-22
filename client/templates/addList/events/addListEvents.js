@@ -15,10 +15,7 @@ Template.add_list_form.events({
         var boardId = event.target.list_name.getAttribute('data-boardid'); //$(event.currentTarget.list_name).data('boardid');
     list_name = event.target.list_name.value;
     $(this).find("input[type=text]").val("");
-  List.insert({
-      list_name: list_name,
-      boardid: boardId
-    });
+    Meteor.call("insertList",boardId,list_name);
     event.target.list_name.value='';
     $("#add_list_form").modal('hide');
     return false;

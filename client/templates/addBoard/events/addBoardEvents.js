@@ -10,10 +10,10 @@ Template.add_board_form.events({
     var board_name;
     board_name = event.target.board_name.value;
     $(this).find("input[type=text]").val("");
-  var  boardid = Board.insert({
-      board_name: board_name
-    });
-    console.log(boardid);
+    Meteor.call("insertBoard",board_name);
+  // var  boardid = Board.insert({
+  //     board_name: board_name
+  //   });
     $("#add_board_form").modal('hide');
     return false;
   }

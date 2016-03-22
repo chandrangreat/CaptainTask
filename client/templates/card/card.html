@@ -2,7 +2,7 @@
 <div class="container-fluid sortable">
 
   {{#each card listId}}
-  <div class="row card-container draggable" id="{{_id}}">
+  <div class="row card-container draggable" id="{{_id}}" board-is="{{this.parent._id}}">
     <div class="col-md-12">
       <!-- <div class="card-container"> -->
 
